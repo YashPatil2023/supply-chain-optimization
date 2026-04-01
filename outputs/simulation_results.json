@@ -1,0 +1,36 @@
+{
+  "demand_spike": {
+    "baseline_avg_demand": 14777.414810888122,
+    "new_avg_demand": 17732.89777306574,
+    "demand_increase_pct": 19.999999999999996,
+    "baseline_inventory_cost": 33875202.53,
+    "new_inventory_cost": 44715267.33959998,
+    "cost_increase": 10840064.80959998,
+    "cost_increase_pct": 31.99999999999994,
+    "additional_vehicles_needed": 1
+  },
+  "supply_delay": {
+    "delay_days": 7,
+    "extra_safety_stock_total": 664983.6664899655,
+    "additional_holding_cost": 33249.18332449828,
+    "baseline_inventory_cost": 33875202.53,
+    "new_inventory_cost": 33908451.7133245,
+    "cost_increase": 33249.18332450092,
+    "cost_increase_pct": 0.09815198387390645,
+    "stores_at_stockout_risk": 0,
+    "stockout_risk_pct": 0.0
+  },
+  "warehouse_failure": {
+    "failed_depot": "Central Depot",
+    "remaining_depots": [
+      "East Depot",
+      "West Depot"
+    ],
+    "stores_reassigned": 10,
+    "baseline_distance_km": 5539.21,
+    "new_distance_km": 73945.3271957251,
+    "distance_increase_km": 68406.11719572509,
+    "distance_increase_pct": 1234.9435604666567,
+    "additional_fuel_cost_estimate": 102609.17579358764
+  }
+}

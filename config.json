@@ -1,0 +1,48 @@
+{
+    "data_paths": {
+        "walmart_train": "Dataset/Walmart Sales Forecast/train.csv",
+        "walmart_test": "Dataset/Walmart Sales Forecast/test.csv",
+        "walmart_stores": "Dataset/Walmart Sales Forecast/stores.csv",
+        "walmart_features": "Dataset/Walmart Sales Forecast/features.csv",
+        "retail_supply_chain": "Dataset/Retail Supply Chain Sales Dataset/Retail-Supply-Chain-Sales-Dataset.xlsx"
+    },
+    "output_paths": {
+        "walmart_merged": "data/walmart/walmart_merged.csv",
+        "retail_clean": "data/supply_chain/retail_clean.csv",
+        "predictions": "outputs/predictions.csv",
+        "inventory_plan": "outputs/inventory_plan.csv",
+        "optimized_routes": "outputs/optimized_routes.csv",
+        "simulation_results": "outputs/simulation_results.json",
+        "model_path": "models/demand_model.pkl",
+        "metrics_path": "outputs/model_metrics.json"
+    },
+    "inventory": {
+        "holding_cost_per_unit_per_week": 0.05,
+        "ordering_cost_per_order": 5000,
+        "safety_stock_weeks": 1,
+        "max_order_quantity": 100000000
+    },
+    "routing": {
+        "num_vehicles": 5,
+        "vehicle_capacity": 50000000,
+        "depots": [
+            {"name": "Central Depot", "lat": 39.8283, "lon": -98.5795},
+            {"name": "East Depot", "lat": 35.2271, "lon": -80.8431},
+            {"name": "West Depot", "lat": 34.0522, "lon": -118.2437}
+        ],
+        "max_distance_km": 5000
+    },
+    "forecasting": {
+        "model_type": "gradient_boosting",
+        "n_estimators": 50,
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "test_size_weeks": 13,
+        "lag_weeks": [1, 2, 4, 8, 12]
+    },
+    "simulation": {
+        "demand_spike_factor": 1.2,
+        "supply_delay_days": 7,
+        "failed_depot_index": 0
+    }
+}
