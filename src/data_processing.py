@@ -73,6 +73,56 @@ STORE_COORDINATES = {
     45: (32.2226, -110.9747),  # Tucson, AZ
 }
 
+# Human-readable store names (city-based)
+STORE_NAMES = {
+    1: "Phoenix, AZ", 2: "Los Angeles, CA", 3: "Chicago, IL",
+    4: "Houston, TX", 5: "New York, NY", 6: "Atlanta, GA",
+    7: "Denver, CO", 8: "Seattle, WA", 9: "Miami, FL",
+    10: "Dallas, TX", 11: "Boston, MA", 12: "Nashville, TN",
+    13: "Washington, DC", 14: "Philadelphia, PA", 15: "Charlotte, NC",
+    16: "Austin, TX", 17: "San Francisco, CA", 18: "Minneapolis, MN",
+    19: "New Orleans, LA", 20: "Milwaukee, WI", 21: "Memphis, TN",
+    22: "Louisville, KY", 23: "Cincinnati, OH", 24: "Las Vegas, NV",
+    25: "San Diego, CA", 26: "Portland, OR", 27: "Omaha, NE",
+    28: "Oklahoma City, OK", 29: "Tampa, FL", 30: "Fort Lauderdale, FL",
+    31: "El Paso, TX", 32: "Birmingham, AL", 33: "San Jose, CA",
+    34: "Pittsburgh, PA", 35: "Cleveland, OH", 36: "Little Rock, AR",
+    37: "Indianapolis, IN", 38: "St. Louis, MO", 39: "Detroit, MI",
+    40: "Jacksonville, FL", 41: "Richmond, VA", 42: "Orlando, FL",
+    43: "Raleigh, NC", 44: "Fresno, CA", 45: "Tucson, AZ",
+}
+
+# Human-readable department categories
+DEPT_NAMES = {
+    1: "Grocery", 2: "Apparel", 3: "Electronics", 4: "Home & Garden",
+    5: "Pharmacy", 6: "Toys & Games", 7: "Automotive", 8: "Sporting Goods",
+    9: "Health & Beauty", 10: "Frozen Foods", 11: "Dairy", 12: "Bakery",
+    13: "Deli & Prepared", 14: "Beverages", 15: "Snacks & Candy",
+    16: "Pet Supplies", 17: "Baby Products", 18: "Office Supplies",
+    19: "Seasonal", 20: "Furniture", 21: "Jewelry", 22: "Shoes",
+    23: "Stationery", 24: "Hardware", 25: "Garden Center",
+    26: "Kitchen & Dining", 27: "Bedding & Bath", 28: "Cleaning Supplies",
+    29: "Paper Goods", 30: "Meat & Seafood", 31: "Produce",
+    32: "Wine & Spirits", 33: "Men's Clothing", 34: "Women's Clothing",
+    35: "Kids' Clothing", 36: "Accessories", 37: "Footwear",
+    38: "Home Décor", 39: "Luggage", 40: "Books & Media",
+    41: "Craft Supplies", 42: "Party Supplies", 43: "Outdoor Living",
+    44: "Small Appliances", 45: "Major Appliances", 46: "Flooring",
+    47: "Paint", 48: "Plumbing", 49: "Electrical", 50: "Lighting",
+    51: "Storage", 52: "Fabric & Sewing", 53: "Musical Instruments",
+    54: "Cameras", 55: "Cell Phones", 56: "Video Games",
+    57: "Movies & TV", 58: "Music", 59: "Tobacco", 60: "Optical",
+    61: "Wireless", 62: "Photo Center", 63: "Fine Jewelry",
+    64: "Watches", 65: "Celebration", 67: "Personal Care",
+    71: "Swimwear", 72: "Intimates", 77: "Collectibles",
+    78: "Community", 79: "Seasonal Décor", 80: "Impulse Items",
+    81: "Floral", 82: "Celebrations", 83: "Uniforms",
+    85: "Custom Orders", 87: "Fuel Station", 90: "Services",
+    91: "Layaway", 92: "Tire Center", 93: "Auto Services",
+    94: "Pharmacy Rx", 95: "Clinic", 96: "Optical Services",
+    97: "Financial", 98: "Returns", 99: "General Merch",
+}
+
 
 def process_walmart_data(config):
     """
